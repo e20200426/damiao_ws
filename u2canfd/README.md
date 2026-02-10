@@ -1,37 +1,40 @@
-# 使用USB转CANFD驱动达妙电机，c++例程
+# Using USB-to-CANFD to Drive Damiao Motors — C++ Example
 
-## 介绍
-这是控制达妙电机的c++例程。
+## Introduction
+This is a C++ example for controlling Damiao motors.
 
-硬件设备需要达妙的**USB转CANFD设备**。
+The required hardware is **Damiao’s USB-to-CANFD** device.
 
-程序测试环境是ubuntu20.04,ubuntu22.04。
+The program has been tested on Ubuntu 20.04 and Ubuntu 22.04.
 
-程序默认运行的效果是先让canid为0x01、mstid为0x11的DM4310电机控制模式设置为速度模式，然后使能，然后旋转，**电机波特率为5M**。
+By default, the program:
 
-***注意：5M波特率下，电机有多个时，需要在末端电机接一个120欧的电阻***
+Sets the motor with CAN ID = 0x01 and MST ID = 0x11 (DM4310 motor) to velocity mode
+, Enables the motor, Makes the motor rotate, **Motor data bitrate is 5 Mbps**
 
-## 软件架构
-使用c++语言，没有用到ros
+***Note: When using 5 Mbps bitrate with multiple motors, a 120-ohm termination resistor must be connected to the last motor on the bus.***
 
-## 安装和编译
-打开终端，先安装libusb库，输入：
+## Software Architecture
+Implemented in C++，ROS is NOT used
+
+## Installation and Compilation
+Install libusb：
 ```shell
 sudo apt update
 sudo apt install libusb-1.0-0-dev
 ```
-然后打开终端，输入：
+Create workspace：
 ```shell
 mkdir -p ~/catkin_ws
 cd ~/catkin_ws
 ```
-然后把gitee上的**u2canfd**文件夹放到catkin_ws目录下。
+Copy the u2canfd folder from Gitee into ~/catkin_ws
 
-如下所示：
+Directory structure example:
 
 <img src="./docs/srcCANFD.png" width="450" height="auto">
 
-接着打开终端，输入：
+Build：
 ```shell
 cd ~/catkin_ws/u2canfd
 mkdir build
@@ -39,58 +42,59 @@ cd build
 cmake ..
 make
 ```
-## 简单使用
-首先用最新上位机给电机设置5M波特率。
+## Basic Usage
+Use the latest Damiao PC tool to set the motor baud rate to 5 Mbps.
 
-然后给**USB转CANFD设备**设置权限，在终端输入：
+Set **USB-to-CANFD** permissions: 
+Create a udev rule:
 ```shell
 sudo nano /etc/udev/rules.d/99-usb.rules
 ```
-然后写入内容：
+Add：
 ```shell
 SUBSYSTEM=="usb", ATTR{idVendor}=="34b7", ATTR{idProduct}=="6877", MODE="0666"
 ```
-然后重新加载并触发：
+Reload rules:
 ```shell
 sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
-***注意：这个设置权限只需要设置1次就行，重新打开电脑、插拔设备都不需要重新设置**
+***Note: This only needs to be done once. No need to repeat after reboot or replug.***
 
-然后需要通过程序找到**USB转CANFD设备**的Serial_Number，在你刚刚编译的build文件夹中打开终端运行dev\_sn文件:
+Then, the program needs to find the Serial_Number of the **USB-to-CANFD**，Open a terminal in the build folder where you just compiled and run the dev_sn file:
 ```shell
 cd ~/catkin_ws/u2canfd/build
 ./dev_sn
 ```
 <img src="./docs/dev.png" width="700" height="auto">
 
-上面图片里的SN后面的一串数字就是该设备的的Serial_Number，
+The string of numbers following the SN in the image above is the Serial\_Number of the device.
 
-接着复制该Serial\_Number，打开main.cpp，替换程序里的Serial\_Number,如下图所示：
+Next, copy the Serial\_Number file, open main.cpp, and replace the Serial\_Number file in the program, as shown in the image below:
 
 <img src="./docs/motor_control.png" width="850" height="auto">
 
-然后重新编译，打开终端输入：
+Then recompile, open the terminal and type:
 ```shell
 cd ~/catkin_ws/u2canfd/build
 make
 ```
 
-在你刚刚编译的build文件夹中打开终端运行dm_main文件:
+Open a terminal in the build folder where you just compiled and run the dm_main file:
 ```shell
 cd ~/catkin_ws/u2canfd/build
 ./dm_main
 ```
-此时你会发现电机亮绿灯，并且旋转
+At this point, you will see the motor light turn green and start rotating.
 
-## 进阶使用
-下面手把手教你怎么使用这个程序，实现功能是使用5M波特率，1kHz同时控制9个DM4310电机
+## Advanced Usage
+Below is a step-by-step guide on how to use this program to simultaneously control nine DM4310 motors at a baud rate of 5 MHz and a kHz frequency.
 
-***注意：5M波特率下，电机有多个时，需要在末端电机接一个120欧的电阻***
+***Note: At a 5 MHz baud rate, if there are multiple motors, a 120 ohm resistor needs to be connected to the end motor.***
 
-1. 首先用最新上位机给每个电机设置5M波特率。
+1. First, use the latest host computer to set a baud rate of 5M for each motor.
 
-2. 然后在main函数里定义id变量：
+2. Then define the id variable in the main function:
 ```shell
 uint16_t canid1 = 0x01;
 uint16_t mstid1 = 0x11;
@@ -111,17 +115,17 @@ uint16_t mstid8 = 0x18;
 uint16_t canid9 = 0x09;
 uint16_t mstid9 = 0x19;
 ```
-3. 然后定义USB转CANFD波特率：
+3. Then define the USB-to-CANFD baudrate:
 
 ```shell
 uint32_t nom_baud =1000000;//仲裁域1M波特率
 uint32_t dat_baud =5000000;//数据域5M波特率
 ```
-4. 然后定义一个电机信息容器：
+4. Then define a motor information container:
 ```shell
 std::vector<damiao::DmActData> init_data;
 ```
-5. 然后再用9个电机数据对该容器进行填充：
+5. Then fill the container with data from 9 motors:
 ```shell
 init_data.push_back(damiao::DmActData{.motorType = damiao::DM4310,
                                             .mode = damiao::MIT_MODE,
@@ -168,14 +172,14 @@ init_data.push_back(damiao::DmActData{.motorType = damiao::DM4310,
         .can_id=canid9,
         .mst_id=mstid9 });
 ```
-6. 然后初始化电机控制结构体：
+6. Then initialize the motor control structure:
 ```shell
 std::shared_ptr<damiao::Motor_Control> control = std::make_shared<damiao::Motor_Control>(nom_baud,dat_baud,
       "AA96DF2EC013B46B1BE4613798544085",&init_data);
 ```
-***注意：上面的"AA96DF2EC013B46B1BE4613798544085"是我设备的SN号，你要替换为你的SN号，通过运行dev_sn文件就可以找到你设备的SN号，前面也提到过***
+***Note: "AA96DF2EC013B46B1BE4613798544085" above is my device's serial number. You need to replace it with your device's serial number. You can find your device's serial number by running the dev_sn file, as mentioned earlier.***
 
-7. 接下来就可以通过该结构体对电机进行控制，给9个电机发mit命令：
+7. Next, the motors can be controlled through this structure by sending MIT commands to all nine motors:
 ```shell
 control->control_mit(*control->getMotor(canid1), 0.0, 0.0, 0.0, 0.0, 0.0);
 control->control_mit(*control->getMotor(canid2), 0.0, 0.0, 0.0, 0.0, 0.0);
@@ -187,25 +191,25 @@ control->control_mit(*control->getMotor(canid7), 0.0, 0.0, 0.0, 0.0, 0.0);
 control->control_mit(*control->getMotor(canid8), 0.0, 0.0, 0.0, 0.0, 0.0);
 control->control_mit(*control->getMotor(canid9), 0.0, 0.0, 0.0, 0.0, 0.0);
 ```
-8. 获取9个电机的位置、速度、力矩还有接收到电机反馈的数据的时间间隔：
+8. Acquire the position, speed, torque, and time interval of the data received from the motors from the nine motors:
 ```shell
 for(uint16_t id = 1;id<=6;id++)
 {
   float pos=control->getMotor(id)->Get_Position();//电机实际位置
   float vel=control->getMotor(id)->Get_Velocity();//电机实际速度
   float tau=control->getMotor(id)->Get_tau();//电机输出力矩
-  double interval=control->getMotor(id)->getTimeInterval() ;//接收到电机反馈的数据的时间间隔
+  double interval=control->getMotor(id)->getTimeInterval() ; //The time interval for receiving data from the motor
   std::cerr<<"canid is: "<<id<<" pos: "<<pos<<" vel: "<<vel
           <<" effort: "<<tau<<" time(s): "<<interval<<std::endl;
 }
 ```
-9. 1kHz的控制频率实现：
+9. Achieving a control loop of 1kHz:
 
-***注意：使用这函数std::this_thread::sleep_until(sleep_till)比较好***
+***Note: It's better to use the function std::this_thread::sleep_until(sleep_till).***
 ```shell
 while (1) 
 { 
-  const duration desired_duration(0.001); // 计算期望周期
+  const duration desired_duration(0.001); // Calculate expected period
   auto current_time = clock::now();
 
 
@@ -213,10 +217,10 @@ while (1)
   std::this_thread::sleep_until(sleep_till);    
 }
 ```
-## 接收函数说明
+## Receive Callback Explanation
 
-在damiao.cpp里的void Motor\_Control::canframeCallback(can\_value_type& value)，
+n damiao.cpp, the function void Motor\_Control::canframeCallback(can\_value_type& value)，
 
-这个函数是对接收到的can报文的解析，不能主动调用，他是作为参数传入到usb_class这个类，在usb\_class类里会开启线程调用该函数，
+This function parses the received CAN messages. It cannot be called manually; it's passed as an argument to the `usb_class` class, which then starts a thread to call this function.
 
-你可以重写这个函数解析自己的can报文数据
+You can override this function to parse your own CAN message data.
