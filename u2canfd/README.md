@@ -128,17 +128,17 @@ std::vector<damiao::DmActData> init_data;
 5. Then fill the container with data from 9 motors:
 ```shell
 init_data.push_back(damiao::DmActData{.motorType = damiao::DM4310,
-                                            .mode = damiao::MIT_MODE,
-                                            .can_id=canid1,
-                                            .mst_id=mstid1 });
+        .mode = damiao::MIT_MODE,
+        .can_id=canid1,
+        .mst_id=mstid1 });
 
 init_data.push_back(damiao::DmActData{.motorType = damiao::DM4310,
         .mode = damiao::MIT_MODE,
         .can_id=canid2,
-       .mst_id=mstid2 });
+        .mst_id=mstid2 });
 
 init_data.push_back(damiao::DmActData{.motorType = damiao::DM4310,
-       .mode = damiao::MIT_MODE,
+        .mode = damiao::MIT_MODE,
         .can_id=canid3,
         .mst_id=mstid3 });
 
@@ -205,7 +205,7 @@ for(uint16_t id = 1;id<=6;id++)
 ```
 9. Achieving a control loop of 1kHz:
 
-***Note: It's better to use the function std::this_thread::sleep_until(sleep_till).***
+***Note: It's better to use the function `std::this_thread::sleep_until(sleep_till).`***
 ```shell
 while (1) 
 { 
@@ -219,7 +219,7 @@ while (1)
 ```
 ## Receive Callback Explanation
 
-n damiao.cpp, the function void Motor\_Control::canframeCallback(can\_value_type& value)，
+In damiao.cpp, the function `void Motor_Control::canframeCallback(can_value_type & value)`，
 
 This function parses the received CAN messages. It cannot be called manually; it's passed as an argument to the `usb_class` class, which then starts a thread to call this function.
 
