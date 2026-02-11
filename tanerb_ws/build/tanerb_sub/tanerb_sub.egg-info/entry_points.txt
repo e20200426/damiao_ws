@@ -1,0 +1,3 @@
+[console_scripts]
+read_pos_DM4340 = tanerb_sub.read_pos_DM4340:main
+tanerb_sub = tanerb_sub.tanerb_sub:main
