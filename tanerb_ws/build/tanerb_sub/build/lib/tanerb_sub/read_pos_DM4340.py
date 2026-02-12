@@ -1,7 +1,7 @@
 import time
 import rclpy
 from rclpy.node import Node
-from tanerb_sub.damiao_motor import Motor, MotorControl, DM_Motor_Type
+from tanerb_ws.src.tanerb_sub.DM_lib.damiao_motor import Motor, MotorControl, DM_Motor_Type
 from sensor_msgs.msg import JointState
 
 # -------------------------

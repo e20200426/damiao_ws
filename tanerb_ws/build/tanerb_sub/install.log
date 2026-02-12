@@ -1,11 +1,13 @@
 /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/tanerb_sub.py
-/home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/damiao_motor.py
 /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/read_pos_DM4340.py
 /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/__init__.py
+/home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/input_position.py
+/home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/tanerb_sub_motor.py
 /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/__pycache__/tanerb_sub.cpython-310.pyc
-/home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/__pycache__/damiao_motor.cpython-310.pyc
 /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/__pycache__/read_pos_DM4340.cpython-310.pyc
 /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/__pycache__/__init__.cpython-310.pyc
+/home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/__pycache__/input_position.cpython-310.pyc
+/home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/__pycache__/tanerb_sub_motor.cpython-310.pyc
 /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/share/ament_index/resource_index/packages/tanerb_sub
 /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/share/tanerb_sub/package.xml
 /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub-0.0.0-py3.10.egg-info/entry_points.txt

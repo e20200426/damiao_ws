@@ -1,0 +1,68 @@
+[0.011s] Invoking command in '/home/ougy/damiao_ws/tanerb_ws/build/ignition_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ougy/ros2_ws/install/user_interface:/home/ougy/ros2_ws/install/service_test:/home/ougy/ros2_ws/install/robstride_ros:/home/ougy/ros2_ws/install/point_cloud_data:/home/ougy/ros2_ws/install/parameter_tests_pkg:/home/ougy/ros2_ws/install/odrive_can:/home/ougy/ros2_ws/install/mks_stepper_can:/home/ougy/ros2_ws/install/manage_node_test:/home/ougy/ros2_ws/install/launch_tests_pkg:/home/ougy/ros2_ws/install/kinematics:/home/ougy/ros2_ws/install/ds4_teleop:/home/ougy/ros2_ws/install/dc_gamepad:/home/ougy/ros2_ws/install/can_driver:/home/ougy/ros2_ws/install/can_test:/home/ougy/ros2_ws/install/action_test_pkg:/home/ougy/ws_moveit/install/moveit_configs_utils:/home/ougy/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/ougy/damiao_ws/tanerb_ws/build/ignition_robot -- -j20 -l20
+[0.036s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.151s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.175s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.176s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.180s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.188s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.198s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.222s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.225s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.321s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.351s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.359s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.369s] -- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+[0.372s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.420s] -- Found ros_gz_bridge: 0.244.20 (/opt/ros/humble/share/ros_gz_bridge/cmake)
+[0.447s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.531s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.761s] -- Found ros_gz_sim: 0.244.20 (/opt/ros/humble/share/ros_gz_sim/cmake)
+[0.762s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.825s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.825s] -- Added test 'lint_cmake' to check CMake code style
+[0.825s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.827s] -- Added test 'xmllint' to check XML markup files
+[0.827s] -- Configuring done
+[0.831s] -- Generating done
+[0.833s] -- Build files have been written to: /home/ougy/damiao_ws/tanerb_ws/build/ignition_robot
+[0.862s] Invoked command in '/home/ougy/damiao_ws/tanerb_ws/build/ignition_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ougy/ros2_ws/install/user_interface:/home/ougy/ros2_ws/install/service_test:/home/ougy/ros2_ws/install/robstride_ros:/home/ougy/ros2_ws/install/point_cloud_data:/home/ougy/ros2_ws/install/parameter_tests_pkg:/home/ougy/ros2_ws/install/odrive_can:/home/ougy/ros2_ws/install/mks_stepper_can:/home/ougy/ros2_ws/install/manage_node_test:/home/ougy/ros2_ws/install/launch_tests_pkg:/home/ougy/ros2_ws/install/kinematics:/home/ougy/ros2_ws/install/ds4_teleop:/home/ougy/ros2_ws/install/dc_gamepad:/home/ougy/ros2_ws/install/can_driver:/home/ougy/ros2_ws/install/can_test:/home/ougy/ros2_ws/install/action_test_pkg:/home/ougy/ws_moveit/install/moveit_configs_utils:/home/ougy/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/ougy/damiao_ws/tanerb_ws/build/ignition_robot -- -j20 -l20
+[0.872s] Invoking command in '/home/ougy/damiao_ws/tanerb_ws/build/ignition_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ougy/ros2_ws/install/user_interface:/home/ougy/ros2_ws/install/service_test:/home/ougy/ros2_ws/install/robstride_ros:/home/ougy/ros2_ws/install/point_cloud_data:/home/ougy/ros2_ws/install/parameter_tests_pkg:/home/ougy/ros2_ws/install/odrive_can:/home/ougy/ros2_ws/install/mks_stepper_can:/home/ougy/ros2_ws/install/manage_node_test:/home/ougy/ros2_ws/install/launch_tests_pkg:/home/ougy/ros2_ws/install/kinematics:/home/ougy/ros2_ws/install/ds4_teleop:/home/ougy/ros2_ws/install/dc_gamepad:/home/ougy/ros2_ws/install/can_driver:/home/ougy/ros2_ws/install/can_test:/home/ougy/ros2_ws/install/action_test_pkg:/home/ougy/ws_moveit/install/moveit_configs_utils:/home/ougy/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/ougy/damiao_ws/tanerb_ws/build/ignition_robot
+[0.881s] -- Install configuration: ""
+[0.881s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/launch
+[0.881s] -- Installing: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/launch/gazebo.launch.py
+[0.881s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/launch/complete.launch.py
+[0.881s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/launch/display.launch.py
+[0.881s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/urdf
+[0.881s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/urdf/ignbot.urdf
+[0.881s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/urdf/tanerb_moveit_config.urdf
+[0.882s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/urdf/tanerb_moveit_config.csv
+[0.882s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/worlds
+[0.882s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/worlds/empty_world.world
+[0.882s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/config
+[0.882s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/config/ignbot.rviz
+[0.882s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/meshes
+[0.882s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/meshes/j5_Link.STL
+[0.882s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/meshes/base_link.STL
+[0.882s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/meshes/j6_Link.STL
+[0.882s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/meshes/j3_Link.STL
+[0.882s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/meshes/j2_Link.STL
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/meshes/j4_Link.STL
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/meshes/j7_Link.STL
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/meshes/j1_Link.STL
+[0.883s] -- Installing: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/model.config
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ament_index/resource_index/package_run_dependencies/ignition_robot
+[0.883s] -- Installing: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ament_index/resource_index/parent_prefix_path/ignition_robot
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/environment/ament_prefix_path.sh
+[0.883s] -- Installing: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/environment/ament_prefix_path.dsv
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/environment/path.sh
+[0.883s] -- Installing: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/environment/path.dsv
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/local_setup.bash
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/local_setup.sh
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/local_setup.zsh
+[0.883s] -- Installing: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/local_setup.dsv
+[0.883s] -- Installing: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/package.dsv
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ament_index/resource_index/packages/ignition_robot
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/cmake/ignition_robotConfig.cmake
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/cmake/ignition_robotConfig-version.cmake
+[0.883s] -- Up-to-date: /home/ougy/damiao_ws/tanerb_ws/install/ignition_robot/share/ignition_robot/package.xml
+[0.884s] Invoked command in '/home/ougy/damiao_ws/tanerb_ws/build/ignition_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ougy/ros2_ws/install/user_interface:/home/ougy/ros2_ws/install/service_test:/home/ougy/ros2_ws/install/robstride_ros:/home/ougy/ros2_ws/install/point_cloud_data:/home/ougy/ros2_ws/install/parameter_tests_pkg:/home/ougy/ros2_ws/install/odrive_can:/home/ougy/ros2_ws/install/mks_stepper_can:/home/ougy/ros2_ws/install/manage_node_test:/home/ougy/ros2_ws/install/launch_tests_pkg:/home/ougy/ros2_ws/install/kinematics:/home/ougy/ros2_ws/install/ds4_teleop:/home/ougy/ros2_ws/install/dc_gamepad:/home/ougy/ros2_ws/install/can_driver:/home/ougy/ros2_ws/install/can_test:/home/ougy/ros2_ws/install/action_test_pkg:/home/ougy/ws_moveit/install/moveit_configs_utils:/home/ougy/ws_moveit/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/ougy/damiao_ws/tanerb_ws/build/ignition_robot
