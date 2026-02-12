@@ -25,7 +25,9 @@ setup(
     entry_points={
         'console_scripts': [
             'tanerb_sub = tanerb_sub.tanerb_sub:main',
-            'read_pos_DM4340 = tanerb_sub.read_pos_DM4340:main'
+            'read_pos_DM4340 = tanerb_sub.read_pos_DM4340:main',
+            'input_position = tanerb_sub.input_position:main',
+            'tanerb_sub_motor = tanerb_sub.tanerb_sub_motor:main',
         ],
     },
 )

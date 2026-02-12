@@ -1,3 +1,5 @@
 [console_scripts]
+input_position = tanerb_sub.input_position:main
 read_pos_DM4340 = tanerb_sub.read_pos_DM4340:main
 tanerb_sub = tanerb_sub.tanerb_sub:main
+tanerb_sub_motor = tanerb_sub.tanerb_sub_motor:main

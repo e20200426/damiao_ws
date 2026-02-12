@@ -1,0 +1,36 @@
+running egg_info
+writing ../../build/tanerb_sub/tanerb_sub.egg-info/PKG-INFO
+writing dependency_links to ../../build/tanerb_sub/tanerb_sub.egg-info/dependency_links.txt
+writing entry points to ../../build/tanerb_sub/tanerb_sub.egg-info/entry_points.txt
+writing requirements to ../../build/tanerb_sub/tanerb_sub.egg-info/requires.txt
+writing top-level names to ../../build/tanerb_sub/tanerb_sub.egg-info/top_level.txt
+reading manifest file '../../build/tanerb_sub/tanerb_sub.egg-info/SOURCES.txt'
+writing manifest file '../../build/tanerb_sub/tanerb_sub.egg-info/SOURCES.txt'
+running build
+running build_py
+copying tanerb_sub/tanerb_sub.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub
+copying tanerb_sub/read_pos_DM4340.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub
+copying tanerb_sub/__init__.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub
+copying tanerb_sub/input_position.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub
+copying tanerb_sub/tanerb_sub_motor.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub
+creating /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub/DM_lib
+copying tanerb_sub/DM_lib/damiao_motor.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub/DM_lib
+copying tanerb_sub/DM_lib/__init__.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub/DM_lib
+running install
+running install_lib
+creating /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/DM_lib
+copying /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub/DM_lib/damiao_motor.py -> /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/DM_lib
+copying /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub/DM_lib/__init__.py -> /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/DM_lib
+byte-compiling /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/DM_lib/damiao_motor.py to damiao_motor.cpython-310.pyc
+byte-compiling /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/DM_lib/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/tanerb_sub -> /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/share/ament_index/resource_index/packages
+copying package.xml -> /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/share/tanerb_sub
+running install_egg_info
+removing '/home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/tanerb_sub/tanerb_sub.egg-info to /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub-0.0.0-py3.10.egg-info
+running install_scripts
+Installing read_pos_DM4340 script to /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/tanerb_sub
+Installing tanerb_sub script to /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/tanerb_sub
+Installing tanerb_sub_motor script to /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/tanerb_sub
+writing list of installed files to '/home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/install.log'

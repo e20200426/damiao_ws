@@ -1,13 +1,13 @@
 import time
-from tanerb_ws.src.tanerb_sub.DM_lib.damiao_motor import Motor, MotorControl, DM_Motor_Type
+from tanerb_sub.DM_lib.damiao_motor import Motor, MotorControl, DM_Motor_Type, Control_Type
 
 # -------------------------
 # Configuration
 # -------------------------
 CAN_INTERFACE = "can0"
 CAN_BITRATE = 1000000          # Ensure this matches your setup
-SLAVE_ID = 0x02
-MASTER_ID = 0x12
+SLAVE_ID = 0x06
+MASTER_ID = 0x16
 
 # -------------------------
 # Initialization
@@ -15,13 +15,16 @@ MASTER_ID = 0x12
 mc = MotorControl(channel=CAN_INTERFACE, bitrate=CAN_BITRATE)
 
 motor = Motor(
-    MotorType=DM_Motor_Type.DM4340,
+    MotorType=DM_Motor_Type.DM4310_48V,
     SlaveID=SLAVE_ID,
     MasterID=MASTER_ID
 )
 mc.addMotor(motor)
 
 mc.enable(motor)  # Enable the motor
+
+# Switch motor to POS_VEL control mode
+mc.switchControlMode(motor, Control_Type.POS_VEL)
 
 # -------------------------
 # Main Control Loop

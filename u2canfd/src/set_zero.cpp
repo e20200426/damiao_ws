@@ -59,17 +59,17 @@ int main(int argc, char** argv)
       .can_id=canid4,
       .mst_id=mstid4 });
 
-      init_data.push_back(damiao::DmActData{.motorType = damiao::DM4310,
+      init_data.push_back(damiao::DmActData{.motorType = damiao::DM4310_48V,
       .mode = damiao::POS_VEL_MODE,
       .can_id=canid5,
       .mst_id=mstid5 });
 
-      init_data.push_back(damiao::DmActData{.motorType = damiao::DM4310,
+      init_data.push_back(damiao::DmActData{.motorType = damiao::DM4310_48V,
       .mode = damiao::POS_VEL_MODE,
       .can_id=canid6,
       .mst_id=mstid6 });
 
-      init_data.push_back(damiao::DmActData{.motorType = damiao::DM4310,
+      init_data.push_back(damiao::DmActData{.motorType = damiao::DM4310_48V,
         .mode = damiao::POS_VEL_MODE,
         .can_id=canid7,
         .mst_id=mstid7 });

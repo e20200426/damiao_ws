@@ -14,6 +14,8 @@ tanerb_sub/input_position.py
 tanerb_sub/read_pos_DM4340.py
 tanerb_sub/tanerb_sub.py
 tanerb_sub/tanerb_sub_motor.py
+tanerb_sub/DM_lib/__init__.py
+tanerb_sub/DM_lib/damiao_motor.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

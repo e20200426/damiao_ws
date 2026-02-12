@@ -1,7 +1,7 @@
 import time
 import rclpy
 from rclpy.node import Node
-from tanerb_ws.src.tanerb_sub.DM_lib.damiao_motor import Motor, MotorControl, DM_Motor_Type
+from tanerb_sub.DM_lib.damiao_motor import Motor, MotorControl, DM_Motor_Type
 from sensor_msgs.msg import JointState
 
 # -------------------------
@@ -9,14 +9,14 @@ from sensor_msgs.msg import JointState
 # -------------------------
 CAN_INTERFACE = "can0"
 CAN_BITRATE = 1000000
-MOTOR_TYPE = DM_Motor_Type.DM4340
-SLAVE_ID = 0x02
-MASTER_ID = 0x12
+MOTOR_TYPE = DM_Motor_Type.DM4310_48V
+SLAVE_ID = 0x06
+MASTER_ID = 0x16
 JOINT_NAME = "motor_1"  # Change this to a suitable name for your robot's joint
 
 class MotorPositionNode(Node):
     def __init__(self):
-        super().__init__('read_pos_dm4340')
+        super().__init__('read_pos_dm4310')
         
         # Initialize motor control and motor objects
         self.mc = MotorControl(channel=CAN_INTERFACE, bitrate=CAN_BITRATE)

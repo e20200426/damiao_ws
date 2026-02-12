@@ -1,0 +1,38 @@
+[0.470s] Invoking command in '/home/ougy/damiao_ws/tanerb_ws/src/tanerb_sub': PYTHONPATH=/home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tanerb_sub build --build-base /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build install --record /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/install.log --single-version-externally-managed install_data
+[0.644s] running egg_info
+[0.654s] writing ../../build/tanerb_sub/tanerb_sub.egg-info/PKG-INFO
+[0.654s] writing dependency_links to ../../build/tanerb_sub/tanerb_sub.egg-info/dependency_links.txt
+[0.654s] writing entry points to ../../build/tanerb_sub/tanerb_sub.egg-info/entry_points.txt
+[0.654s] writing requirements to ../../build/tanerb_sub/tanerb_sub.egg-info/requires.txt
+[0.654s] writing top-level names to ../../build/tanerb_sub/tanerb_sub.egg-info/top_level.txt
+[0.675s] reading manifest file '../../build/tanerb_sub/tanerb_sub.egg-info/SOURCES.txt'
+[0.676s] writing manifest file '../../build/tanerb_sub/tanerb_sub.egg-info/SOURCES.txt'
+[0.676s] running build
+[0.676s] running build_py
+[0.676s] copying tanerb_sub/tanerb_sub.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub
+[0.676s] copying tanerb_sub/read_pos_DM4340.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub
+[0.676s] copying tanerb_sub/__init__.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub
+[0.676s] copying tanerb_sub/input_position.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub
+[0.676s] copying tanerb_sub/tanerb_sub_motor.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub
+[0.676s] creating /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub/DM_lib
+[0.676s] copying tanerb_sub/DM_lib/damiao_motor.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub/DM_lib
+[0.676s] copying tanerb_sub/DM_lib/__init__.py -> /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub/DM_lib
+[0.677s] running install
+[0.679s] running install_lib
+[0.689s] creating /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/DM_lib
+[0.689s] copying /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub/DM_lib/damiao_motor.py -> /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/DM_lib
+[0.689s] copying /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build/lib/tanerb_sub/DM_lib/__init__.py -> /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/DM_lib
+[0.690s] byte-compiling /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/DM_lib/damiao_motor.py to damiao_motor.cpython-310.pyc
+[0.693s] byte-compiling /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub/DM_lib/__init__.py to __init__.cpython-310.pyc
+[0.693s] running install_data
+[0.693s] copying resource/tanerb_sub -> /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/share/ament_index/resource_index/packages
+[0.693s] copying package.xml -> /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/share/tanerb_sub
+[0.693s] running install_egg_info
+[0.705s] removing '/home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub-0.0.0-py3.10.egg-info' (and everything under it)
+[0.705s] Copying ../../build/tanerb_sub/tanerb_sub.egg-info to /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages/tanerb_sub-0.0.0-py3.10.egg-info
+[0.705s] running install_scripts
+[0.726s] Installing read_pos_DM4340 script to /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/tanerb_sub
+[0.726s] Installing tanerb_sub script to /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/tanerb_sub
+[0.726s] Installing tanerb_sub_motor script to /home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/tanerb_sub
+[0.726s] writing list of installed files to '/home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/install.log'
+[0.740s] Invoked command in '/home/ougy/damiao_ws/tanerb_ws/src/tanerb_sub' returned '0': PYTHONPATH=/home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ougy/damiao_ws/tanerb_ws/install/tanerb_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tanerb_sub build --build-base /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/build install --record /home/ougy/damiao_ws/tanerb_ws/build/tanerb_sub/install.log --single-version-externally-managed install_data
