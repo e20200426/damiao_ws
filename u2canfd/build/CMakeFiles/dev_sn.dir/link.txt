@@ -1,1 +1,0 @@
-/usr/lib/ccache/c++ CMakeFiles/dev_sn.dir/src/dev_sn.cpp.o -o dev_sn  -lusb-1.0 
