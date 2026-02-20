@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ougy/damiao_ws/u2canfd
+CMAKE_SOURCE_DIR = /home/ougy/damiao_ws/u2canfd_cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ougy/damiao_ws/u2canfd/build
+CMAKE_BINARY_DIR = /home/ougy/damiao_ws/u2canfd_cpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/motor.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/motor.dir/flags.make
 CMakeFiles/motor.dir/src/protocol/damiao.cpp.o: CMakeFiles/motor.dir/flags.make
 CMakeFiles/motor.dir/src/protocol/damiao.cpp.o: ../src/protocol/damiao.cpp
 CMakeFiles/motor.dir/src/protocol/damiao.cpp.o: CMakeFiles/motor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ougy/damiao_ws/u2canfd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor.dir/src/protocol/damiao.cpp.o"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor.dir/src/protocol/damiao.cpp.o -MF CMakeFiles/motor.dir/src/protocol/damiao.cpp.o.d -o CMakeFiles/motor.dir/src/protocol/damiao.cpp.o -c /home/ougy/damiao_ws/u2canfd/src/protocol/damiao.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ougy/damiao_ws/u2canfd_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor.dir/src/protocol/damiao.cpp.o"
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/motor.dir/src/protocol/damiao.cpp.o -MF CMakeFiles/motor.dir/src/protocol/damiao.cpp.o.d -o CMakeFiles/motor.dir/src/protocol/damiao.cpp.o -c /home/ougy/damiao_ws/u2canfd_cpp/src/protocol/damiao.cpp
 
 CMakeFiles/motor.dir/src/protocol/damiao.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor.dir/src/protocol/damiao.cpp.i"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ougy/damiao_ws/u2canfd/src/protocol/damiao.cpp > CMakeFiles/motor.dir/src/protocol/damiao.cpp.i
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ougy/damiao_ws/u2canfd_cpp/src/protocol/damiao.cpp > CMakeFiles/motor.dir/src/protocol/damiao.cpp.i
 
 CMakeFiles/motor.dir/src/protocol/damiao.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor.dir/src/protocol/damiao.cpp.s"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ougy/damiao_ws/u2canfd/src/protocol/damiao.cpp -o CMakeFiles/motor.dir/src/protocol/damiao.cpp.s
+	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ougy/damiao_ws/u2canfd_cpp/src/protocol/damiao.cpp -o CMakeFiles/motor.dir/src/protocol/damiao.cpp.s
 
 # Object files for target motor
 motor_OBJECTS = \
@@ -93,7 +93,7 @@ motor_EXTERNAL_OBJECTS =
 libmotor.a: CMakeFiles/motor.dir/src/protocol/damiao.cpp.o
 libmotor.a: CMakeFiles/motor.dir/build.make
 libmotor.a: CMakeFiles/motor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ougy/damiao_ws/u2canfd/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmotor.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ougy/damiao_ws/u2canfd_cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmotor.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/motor.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/motor.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/motor.dir/clean:
 .PHONY : CMakeFiles/motor.dir/clean
 
 CMakeFiles/motor.dir/depend:
-	cd /home/ougy/damiao_ws/u2canfd/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ougy/damiao_ws/u2canfd /home/ougy/damiao_ws/u2canfd /home/ougy/damiao_ws/u2canfd/build /home/ougy/damiao_ws/u2canfd/build /home/ougy/damiao_ws/u2canfd/build/CMakeFiles/motor.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ougy/damiao_ws/u2canfd_cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ougy/damiao_ws/u2canfd_cpp /home/ougy/damiao_ws/u2canfd_cpp /home/ougy/damiao_ws/u2canfd_cpp/build /home/ougy/damiao_ws/u2canfd_cpp/build /home/ougy/damiao_ws/u2canfd_cpp/build/CMakeFiles/motor.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/motor.dir/depend
 

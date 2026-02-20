@@ -1,6 +1,6 @@
 CMakeFiles/dev_sn.dir/src/dev_sn.cpp.o: \
- /home/ougy/damiao_ws/u2canfd/src/dev_sn.cpp /usr/include/stdc-predef.h \
- /usr/include/libusb-1.0/libusb.h \
+ /home/ougy/damiao_ws/u2canfd_cpp/src/dev_sn.cpp \
+ /usr/include/stdc-predef.h /usr/include/libusb-1.0/libusb.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h \

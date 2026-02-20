@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ougy/damiao_ws/u2canfd/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
+  "/home/ougy/damiao_ws/u2canfd_cpp/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ougy/damiao_ws/u2canfd/build/CMakeFiles/motor.dir/DependInfo.cmake"
+  "/home/ougy/damiao_ws/u2canfd_cpp/build/CMakeFiles/motor.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

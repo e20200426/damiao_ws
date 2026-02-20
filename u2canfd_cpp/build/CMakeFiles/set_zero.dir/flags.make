@@ -4,7 +4,7 @@
 # compile CXX with /usr/lib/ccache/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ougy/damiao_ws/u2canfd/include -I/home/ougy/damiao_ws/u2canfd/src -I/usr/include/libusb-1.0
+CXX_INCLUDES = -I/home/ougy/damiao_ws/u2canfd_cpp/include -I/home/ougy/damiao_ws/u2canfd_cpp/src -I/usr/include/libusb-1.0
 
 CXX_FLAGS = -std=gnu++14
 
